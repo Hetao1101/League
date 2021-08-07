@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?><!--约束文件-->
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration><!--主配置文件根标签 -->
+    <properties resource="db.properties"/>
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+    <typeAliases>
+        <!--        实体类的包名-->
+        <package name="实体类的包名"/>
+    </typeAliases>
+        <environments default="development"><!--环境配置标签 -->
+            <environment id="development"><!--配置一个数据库信息标签 -->
+                <transactionManager type="JDBC"/><!--事务管理标签 表示使用JDBC中的conntion对象管理commit，rollback做事务处理-->
+                <dataSource type="POOLED"><!--数据源标签 表示使用POOLED连接池 -->
+                    <property name="driver" value="${jdbc.driver}"/><!--数据库驱动类名 -->
+                    <property name="url" value="${jdbc.url}"/>
+                    <property name="username" value="${jdbc.user}"/>
+                    <property name="password" value="${jdbc.pwd}"/>
+                </dataSource>
+            </environment>
+        </environments>
+    <mappers><!-- -->
+<!--                <mapper resource="org/hetao/mapper/RoleDao.xml"/>-->
+<!--        <mapper resource="org/hetao/mapper/UserDao.xml"/>-->
+        <!--        映射文件的包名-->
+        <package name="org.hetao.dao"/>
+    </mappers>
+</configuration>

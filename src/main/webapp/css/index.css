@@ -1,0 +1,189 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#header_left{
+	height: 90px;
+	width: 1000px;
+	border: 1px solid black;
+	float: left;
+}
+#header_left img {
+	float: left;
+	margin:10px 80px ;
+}
+#header_right{
+
+	height: 80px;
+	width: 500px;
+	float: left;
+
+	border: 1px solid black;
+}
+#header_left ul li{
+	float: left;
+	list-style: none;
+	margin-top:  10px;
+	margin-right: 50px;
+	color: white;
+}
+#header_right ul li{
+	float: left;
+	list-style: none;
+	margin: 10px;
+	color: white;
+}
+.login{
+	position: absolute;
+	width: 512px;
+	height: 284px;
+	z-index: 9999;
+	display: none;
+	background-color: white;
+	left: 50%;
+	margin-left: -256px;
+	margin-top: 50px;
+	border: 2px solid gray;
+}
+.login_title{
+	width: 300px;
+	height: 50px;
+	margin: 20px auto;
+
+}
+.login_title span h3{
+	padding-left: 100px;
+	margin-bottom: 12px;
+}
+.login_title p{
+	display: block;
+	letter-spacing: 2px;
+	font-size: 15px;
+	color:gray;
+}
+.login_title p a{
+	text-decoration: none;
+}
+.login_body{
+	width: 300px;
+	height: 150px;
+	margin: 0px auto;
+}
+.login_body input{
+	height: 30px;
+	margin-bottom: 10px;
+}
+.login #btn{
+	width: 220px;
+	background-color: #86ce2f;
+	margin-left: 50px;
+	border: none;
+}
+#closeBtn{
+	margin-top: 0;
+	margin-left: 460px;
+	border: none;
+	border-left: gray 1px solid;
+	width: 50px;
+	height: 30px;
+	letter-spacing: 5px;
+	color: gray;
+	background-color: white;
+}
+.bg{
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	position: fixed;
+	opacity: 0.3;
+	-webkit-opacity: 0.3;
+	-moz-opacity: 0.3;
+	display: none;
+}
+li a{
+	color: bisque;
+}
+li p{
+	font-size: 10px;
+}
+
+ul{
+	float: left;
+}
+#select_region{
+
+	border: 2px solid gray;
+	position: absolute;
+	z-index: 9999;
+	left: 50%;
+	margin-left: -175px;
+	background-color: white;
+	width: 350px;
+	height: 130px;
+}
+#region_title{
+	color: white;
+	background-color: #2196f3;
+	height: 25px;
+}
+#region_body{
+	width: 350px;
+	margin: 5px auto;
+	padding:5px 25px ;
+
+}
+#region_body select{
+	width: 300px;
+	height: 30px;
+
+}
+#region_body section option{
+	border: 1px solid #c1bdbd;
+}
+#region_footer{
+	margin-top: 20px;
+	height: 30px;
+	width: 300px;
+
+}
+#region_footer .sure{
+	border: none;
+	background-color: #027bdc;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 130px;
+	height: 30px;
+	color: white;
+}
+#region_body .cancel{
+	border: none;
+	background-color: gainsboro;
+	width: 130px;
+	height: 30px;
+	color: white;
+}
+#role_span img{
+	width: 50px;
+}
+.official_website{
+	position: absolute;
+	z-index: 100;
+	width: 200px;
+	height: 40px;
+	padding-left: 70px;
+	background-color: black;
+	margin-top: 900px;
+	margin-left: 650px;
+	border: 5px solid;
+	border-radius: 30px;
+}
+#body video{
+	position: absolute;
+	z-index: 50;
+}
+.official_website a{
+	color: white;
+	font-size: 30px;
+	text-decoration: none;
+}
